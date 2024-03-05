@@ -1,0 +1,17 @@
+h2 {
+  color: orange;
+  font-size: 25px;
+}
+
+h4 {
+  color: violet;
+}
+
+
+h5, h3 {
+  color: green;
+}
+
+/* h3 {
+  color: green;
+} */

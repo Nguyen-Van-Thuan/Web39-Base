@@ -1,0 +1,80 @@
+/* Reset Browser */
+* {
+  padding: 0;
+  /* Khoang cach giua cac PT*/
+  margin: 0;
+  /* Khoang cach giua cac PT*/
+  box-sizing: border-box;
+}
+
+/* 
+   + Dat Ten theo class (class = "...")
+   + Trong 1 trang co nhieu class giong nhau
+   + Truy cap vao tung PT da dat ten dung dau "."
+   + Duoc su dung nhieu trong du an thuc te
+   */
+.title-1 {
+  color: red;
+}
+
+.title-2 {
+  color: blue;
+}
+
+/* 
+  + Dat ten theo id (id="...")
+  + Trong 1 trang id no la duy nhat
+  + Truy cap vao PT dat ten theo id dung dau "#"
+*/
+#title-3 {
+  color: violet;
+}
+#title-4 {
+  color: orange;
+}
+
+
+div p {
+  color: pink;
+}
+p {
+  color: green;
+}
+
+
+/* Bo chon phan tu */
+h1 {
+  color: #2222F5;
+  font-style: italic;
+}
+
+/* Bo chon voi the dieu huong */
+a:link {
+  color: blue;
+}
+a:visited {
+  color: red;
+}
+
+
+/* Margin - Padding */
+.box-1 {
+  width: 300px;
+  height: 300px;
+  background-color: pink;
+  margin-top: 100px;
+  /* padding-left: 50px;
+  padding-top: 100px; */
+  border: 5px dotted red;
+}
+
+
+.box-2 {
+  margin-top: 100px;
+  width: 100px;
+  height: 100px;
+  background-color: #000;
+  /* border-radius: 15px; */
+  border-radius: 100%;
+  /* display: none; */
+}
