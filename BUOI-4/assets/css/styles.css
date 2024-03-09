@@ -12,7 +12,36 @@
   background-color: pink;
 
   display: flex;
+
+  /* Xac dinh huong PT con */
+  /* flex-direction: column-reverse; */
+
+  /* Xac dinh PT con xuong hang hay khong ? */
+  /* flex-wrap: wrap-reverse; */
+
+  /* Can chinh phan tu trong 1 hang -> Quan trong */
+  /* justify-content: flex-end; */
+  /* justify-content: space-evenly; */
+
+
+  /* justify-content: space-between; */
+  /* justify-content: center; */
+  /* justify-content: space-around; */
+
+  /* Can chinh vi tri PT theo hang doc -> Quan trong */
+  /* align-items: flex-start; */
+  /* align-items: stretch; */
+  /* align-items: center; */
+
+
+  /* Can chinh hang cua PT cha */
+  /* flex-wrap: wrap; */
+  /* align-content: space-between; */
+
+
 }
+
+
 
 
 /* Phan tu con */
@@ -20,19 +49,40 @@
   width: 150px;
   height: 150px;
   background-color: red;
+  color: #fff;
+  font-size: 15px;
+
+  /* order: 2; */
 }
 .box-2 {
   width: 150px;
   height: 150px;
   background-color: black;
+  color: #fff;
+  font-size: 15px;
+
+  /* order: 1; */
 }
 .box-3 {
   width: 150px;
   height: 150px;
   background-color: blue;
+  color: #fff;
+  font-size: 15px;
+
+  flex-shrink: 0;
+
+  /* flex-grow: 1; */
+  /* order: 4; */
+
 }
 .box-4 {
   width: 150px;
   height: 150px;
   background-color: green;
+  color: #fff;
+  font-size: 15px;
+
+  /* flex-grow: 1; */
+  /* order: 3; */
 }
