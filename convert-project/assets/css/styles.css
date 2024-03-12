@@ -17,6 +17,7 @@
   width: 100%;
   height: 40px;
   background-color: #cd6420;
+  position: relative;
 }
 .header-top-text {
   width: 100%;
@@ -31,12 +32,42 @@
   font-size: 16px;
 }
 
+.close {
+  position: absolute;
+  top: 50%;
+  /* left: 50%; */
+  right: 5px;
+  transform: translate(-50%, -50%);
+
+  width: 30px;
+  height: 30px;
+  background-color: white;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+
+  opacity: 0.5;
+
+}
+
+.close i {
+  color: #252525;
+}
+
+/* hover - Di chuyen chuot qua phan tu */
+.close:hover {
+  opacity: 1; /* Do trong suot cua pt */
+  cursor: pointer; /*Bien con tro chuot thanh ban tay*/
+}
+
 /* Header Main */
 .header-main {
   width: 100%;
   height: 65px;
 
-  background-color: pink;
+  background-color: #fff;
 }
 
 .wrap-header-main {
@@ -61,7 +92,7 @@
 .header-main-center {
   /* width: 65%; */
   height: 65px;
-  background-color: yellow;
+  /* background-color: yellow; */
 }
 .menu-main {
   width: 100%;
@@ -81,19 +112,80 @@
 
 
 .header-main-right {
-  width: calc(100% - (20% + 50%));
+  /* width: calc(100% - (20% + 50%)); */
   height: 65px;
-  background-color: violet;
   display: flex;
 }
 
-.customer-left {
-  width: 50%;
+.customer-left ul {
+  display: flex;
   height: 65px;
-  background-color: black;
+  align-items: center;
 }
+.customer-left ul li {
+  list-style: none;
+  width: 35px;
+  height: 35px;
+  /* background-color: rgba(238, 238, 238, 0.4); */
+  background-color: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.customer-left ul li:hover {
+  background-color:  rgba(238, 238, 238, 0.4);
+}
+
+.customer-left ul .disabled {
+  opacity: 0.3;
+  cursor: not-allowed;
+}
+.customer-left ul .disabled:hover {
+  background-color: #fff;
+}
+
+
+
+
 .customer-right {
-  width: 50%;
+margin-left: 20px;
+}
+
+.customer-right ul {
+  display: flex;
   height: 65px;
-  background-color: green;
+  align-items: center;
+}
+.customer-right ul li {
+  list-style: none;
+  margin-left: 15px;
+  position: relative;
+}
+.customer-right ul li i {
+  font-size: 19px;
+}
+.customer-right ul li span {
+  position: absolute;
+  top: -12px;
+  right: -8px;
+  width: 20px;
+  height: 20px;
+  background-color: red;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 13px;
+  color: #fff;
+}
+
+
+
+
+
+
+.banner {
+  border-top: 1px solid #111;
 }

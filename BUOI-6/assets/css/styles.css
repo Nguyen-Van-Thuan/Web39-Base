@@ -1,0 +1,117 @@
+/* Reset Browser */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+
+/* Menu */
+.top-bar {
+  width: 100%;
+  height: 40px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+}
+.menu {
+  width: 100%;
+  height: 100px;
+  background-color: blue;
+
+  position: sticky;
+  top: 0;
+}
+
+
+
+/* POSTION: STATIC */
+.box-1 {
+  width: 200px;
+  height: 200px;
+  background-color: red;
+
+  /* 
+   + Mac dinh postion: static
+   + Top, Left, Right, Bottom deu khong hoat dong
+   */
+  position: static;
+  /* top: 100px; */
+}
+
+
+/* POSTION: RELAVTIVE */
+.box-2 {
+  width: 200px;
+  height: 200px;
+  background-color: blue;
+
+  /* margin-top: 100px; */
+
+  /* 
+   + K/C giua 2 canh doi xung k bang nhau
+   + Top -> Right -> Bottom -> Left 
+  */
+  /* margin: 100px 0 0 100px; */
+
+  /* 
+   + K/C giua 2 canh doi xung bang nhau
+   + tuong ung: (top-bottom) (right - left);
+  */ 
+  /* margin: 0 0;  */
+
+  /* position: relative; */
+
+  /* left: 100px; */
+
+}
+
+
+
+/* POSTION: APSOLUTE */
+.box-3 {
+  width: 200px;
+  height: 200px;
+  background-color: green;
+  position: relative;
+
+}
+
+.box-4 {
+  width: 50px;
+  height: 50px;
+  background-color: black;
+
+  position: absolute;
+  top: 100px;
+  z-index: 9999;
+}
+
+.box-5 {
+  width: 50px;
+  height: 50px;
+  background-color: orange;
+
+  position: absolute;
+  top: 80px;
+  z-index: 0;
+}
+
+.counter {
+  width: 100%;
+  height: 500px;
+  background-color: pink;
+}
+
+
+/* POSITION: FIXED */
+.box-6 {
+  width: 90px;
+  height: 90px;
+  background-color: aqua;
+  border-radius: 50%;
+
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+}

@@ -1,0 +1,86 @@
+/* Reset Browser */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+
+/* Thay doi gia tri cua 1 thuoc tinh */
+.box-1 {
+  width: 300px;
+  height: 300px;
+  background-color: red;
+
+  /* Su dung transtiion */
+  transition: width 2s;
+}
+
+.box-1:hover {
+  width: 600px;
+}
+
+
+/* Thay doi gia tri cua nhieu thuoc tinh */
+.box-2 {
+  width: 300px;
+  height: 300px;
+  background-color: blue;
+
+  transition: width .2s, height .2s;
+}
+.box-2:hover {
+  width: 600px;
+  height: 600px;
+}
+
+/* Toc do chuyen doi transition */
+.wrap-box div {
+  width: 150px;
+  height: 150px;
+  background-color: orange;
+  color: #000;
+  text-transform: uppercase; /* Chu thuong -> Chu in hoa*/
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 5px;
+
+  transition: width 5s;
+}
+
+.wrap-box .box-3 {
+  transition-timing-function: linear;
+}
+.wrap-box .box-4 {
+  transition-timing-function: ease;
+}
+.wrap-box .box-5 {
+  transition-timing-function: ease-in;
+}
+.wrap-box .box-6 {
+  transition-timing-function: ease-out;
+}
+.wrap-box .box-7 {
+  transition-timing-function: ease-in-out;
+}
+
+
+
+.wrap-box div:hover {
+  width: 600px;
+}
+
+
+/* Do tre cua hieu ung transition */
+.box-8 {
+  width: 200px;
+  height: 200px;
+  background-color: green;
+
+  transition: width .5s;
+  transition-delay: 2s;
+}
+.box-8:hover {
+  width: 600px;
+}

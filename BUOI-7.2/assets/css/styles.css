@@ -1,0 +1,78 @@
+/* Reset Browser */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+
+/* Translate(x,y) */
+.box-1 {
+  width: 200px;
+  height: 200px;
+  background-color: red;
+  /* transform: translate(50px, 100px); */
+
+  /* transform: translateY(100px);
+  transform: translateX(50px); */
+
+}
+
+
+/* Scale(x,y) */
+.box-2 {
+  width: 200px;
+  height: 200px;
+  background-color: blue;
+  /* margin: auto; */
+}
+
+.box-2:hover {
+  /* width: 400px;
+  height: 400px; */
+  /* transform: scale(2, 2); */
+
+  /* transform: scaleX(2); */
+  /* transform: scaleY(2); */
+}
+
+/* rotate() */
+.box-3 {
+  width: 200px;
+  height: 200px;
+  background-color: violet;
+  margin: auto;
+
+  transform: rotate(45deg);
+}
+
+/* 3D TRANSFORM */
+.box-4 {
+  width: 200px;
+  height: 200px;
+  background-color: black;
+
+  /* transform: translate3d(0, 0, 50px); */
+
+  transform: rotateZ(45deg);
+
+
+  /* transform: rotateZ(45deg); */
+}
+
+
+
+/* Ket hop transform && transition */
+
+.box-5 {
+  width: 200px;
+  height: 200px;
+  background-color: pink;
+  margin: auto;
+  transition: width .2s, height .2s, transform .3s;
+}
+.box-5:hover {
+  width: 400px;
+  height: 400px;
+  transform: rotate(360deg);
+}
