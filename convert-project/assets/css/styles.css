@@ -6,11 +6,36 @@
   font-family: "Mulish", sans-serif;
 }
 
-/* Thanh Phan Global */
+/* Global CSS */
 .container {
   max-width: 1230px;
   margin: auto;
 }
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -15px;
+}
+.coloumn {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* Set chieu rong coloumn */
+.coloumn-2 {
+  width: calc(100% / 2);
+}
+.coloumn-3 {
+  width: calc(100% / 3);
+}
+.coloumn-4 {
+  width: calc(100% / 4);
+}
+.coloumn-6 {
+  width: calc(100% / 6);
+}
+
 
 /* Header Top */
 .header-top {
@@ -68,6 +93,9 @@
   height: 65px;
 
   background-color: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 9999999999999;
 }
 
 .wrap-header-main {
@@ -146,9 +174,6 @@
   background-color: #fff;
 }
 
-
-
-
 .customer-right {
 margin-left: 20px;
 }
@@ -181,11 +206,22 @@ margin-left: 20px;
   color: #fff;
 }
 
+/* Service Hot */
+.service-hot {
+  width: 100%;
+  background-color: pink;
+  padding: 50px 0;
+}
+.content {
+  width: 100%;
+  height: 200px;
+  background-color: violet;
+  margin-bottom: 30px;
+}
 
-
-
-
-
-.banner {
-  border-top: 1px solid #111;
+/* Product */
+.product-hot {
+  width: 100%;
+  background-color: aqua;
+  padding: 50px 0;
 }
