@@ -1,0 +1,212 @@
+/* Reset Browser */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+
+/* Animation Loading */
+.loading {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  margin: auto;
+  border: 5px solid green;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  transform: rotate(45deg);
+
+  /* 
+  Di vao su dung animation 
+  + animation-name: ten animation
+  + animation-duration: Xac dinh thoi gian trong 1 chu ki (s)
+  + animation-delay: Xac dinh sau bao lau animation chay
+  + animation-iteration-count: Xac dinh so vong animation chay
+  + animation-direction: chi dinh huong animation
+
+  + animation-timing-function: Xac dinh chuyen dong animation
+
+  + animation-fill-mode: Xac dinh trang thai cuoi cung cua animation
+  */
+
+
+  /* animation: loading .8s 2  linear forwards ; */
+  animation: loading .8s infinite linear;
+  /* Ten - Thoi gian - So vong - kieu chay*/
+}
+
+/* Cu phap khai bao animation */
+@keyframes loading {
+  /* from {
+    transform: rotate(45deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  } */
+
+  /* from: Tu dau --- To: Toi dau */
+  0% {
+    transform: rotate(0deg);
+  }
+
+  50% {
+    border-color: brown;
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+
+/* Animation Ring */
+.box-1 {
+  width: 280px;
+  height: 40px;
+  background-color: blue;
+  border-radius: 20px;
+  margin: auto;
+  margin-top: 20px;
+
+  /* Su dung animation */
+  -webkit-animation: vibrate-1 0.3s linear infinite both;
+  animation: vibrate-1 0.3s linear infinite both;
+
+}
+
+
+/* Khai bao */
+@-webkit-keyframes vibrate-1 {
+  0% {
+    -webkit-transform: translate(0);
+    transform: translate(0);
+  }
+
+  20% {
+    -webkit-transform: translate(-2px, 2px);
+    transform: translate(-2px, 2px);
+  }
+
+  40% {
+    -webkit-transform: translate(-2px, -2px);
+    transform: translate(-2px, -2px);
+  }
+
+  60% {
+    -webkit-transform: translate(2px, 2px);
+    transform: translate(2px, 2px);
+  }
+
+  80% {
+    -webkit-transform: translate(2px, -2px);
+    transform: translate(2px, -2px);
+  }
+
+  100% {
+    -webkit-transform: translate(0);
+    transform: translate(0);
+  }
+}
+
+@keyframes vibrate-1 {
+  0% {
+    -webkit-transform: translate(0);
+    transform: translate(0);
+  }
+
+  20% {
+    -webkit-transform: translate(-2px, 2px);
+    transform: translate(-2px, 2px);
+  }
+
+  40% {
+    -webkit-transform: translate(-2px, -2px);
+    transform: translate(-2px, -2px);
+  }
+
+  60% {
+    -webkit-transform: translate(2px, 2px);
+    transform: translate(2px, 2px);
+  }
+
+  80% {
+    -webkit-transform: translate(2px, -2px);
+    transform: translate(2px, -2px);
+  }
+
+  100% {
+    -webkit-transform: translate(0);
+    transform: translate(0);
+  }
+}
+
+
+/* Animation Heart */
+.wrap-box {
+  width: 80px;
+
+  margin: auto;
+  margin-top: 100px;
+  position: relative;
+  animation: heart .8s infinite linear;
+
+}
+  /* Cach 2: 
+    + su dung :nth-child(x)
+    + Voi x la so phan tu muon style
+  */
+  .wrap-box div {
+    width: 40px;
+    height: 40px;
+    background-color: red;
+    position: absolute;
+  }
+  .wrap-box div:nth-child(1) {
+    top: 0;
+    left: 0;
+    transform: rotate(45deg);
+    border-radius: 50% 0 0 50%; /*top - right - bottom - left*/
+  }
+  .wrap-box div:nth-child(2) {
+    top: 0;
+    left: 40px;
+    transform: rotate(45deg);
+    border-radius: 50% 50% 0 0;
+  }
+  .wrap-box div:nth-child(3) {
+    top: 20px;
+    left: 20px;
+    transform: rotate(45deg);
+  }
+
+
+  /* Khai bao animation heart */
+  @keyframes heart {
+    from {
+      transform: scale(1);
+    }
+    to {
+      transform: scale(2);
+    }
+  }
+
+
+
+
+
+
+
+
+
+  /* cach 1: 
+  + su dung :first-child
+  + su dung :last-child
+  */
+  /* .wrap-box div:first-child {
+    background-color: blue;
+  }
+  .wrap-box div:last-child {
+    background-color: orange;
+  } */
