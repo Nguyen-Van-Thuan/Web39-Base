@@ -17,6 +17,7 @@
   flex-wrap: wrap;
   margin: 0 -15px;
 }
+
 .coloumn {
   padding-left: 15px;
   padding-right: 15px;
@@ -26,16 +27,18 @@
 .coloumn-2 {
   width: calc(100% / 2);
 }
+
 .coloumn-3 {
   width: calc(100% / 3);
 }
+
 .coloumn-4 {
   width: calc(100% / 4);
 }
+
 .coloumn-6 {
   width: calc(100% / 6);
 }
-
 
 /* Header Top */
 .header-top {
@@ -44,14 +47,18 @@
   background-color: #cd6420;
   position: relative;
 }
+
 .header-top-text {
   width: 100%;
   height: 40px;
 
   display: flex;
-  justify-content: center; /*Can giua theo chieu ngang*/
-  align-items: center; /*Can giau theo chieu doc*/
+  justify-content: center;
+  /*Can giua theo chieu ngang*/
+  align-items: center;
+  /*Can giau theo chieu doc*/
 }
+
 .header-top-text p {
   color: white;
   font-size: 16px;
@@ -83,9 +90,14 @@
 
 /* hover - Di chuyen chuot qua phan tu */
 .close:hover {
-  opacity: 1; /* Do trong suot cua pt */
-  cursor: pointer; /*Bien con tro chuot thanh ban tay*/
+  opacity: 1;
+  /* Do trong suot cua pt */
+  cursor: pointer;
+  /*Bien con tro chuot thanh ban tay*/
 }
+
+
+
 
 /* Header Main */
 .header-main {
@@ -110,6 +122,7 @@
   display: flex;
   align-items: center;
 }
+
 .header-main-left img {
   width: 145px;
   height: auto;
@@ -118,23 +131,52 @@
 
 
 .header-main-center {
-  /* width: 65%; */
   height: 65px;
-  /* background-color: yellow; */
 }
+
 .menu-main {
   width: 100%;
   height: 65px;
   display: flex;
   align-items: center;
 }
+
 .menu-main li {
   margin-right: 20px;
-  list-style: none; /*Bo dau cham the DS ul li*/
+  list-style: none;
+  padding: 22px 0;
+  position: relative;
 }
 
+.menu-main li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 15px;
+  height: 2px;
+  /* width: 100%; */
+  width: 0;
+  background-color: #000;
+  transition: width .5s;
+}
+
+.menu-main li:hover::before {
+  width: 100%;
+}
+
+.menu-main li i {
+  font-size: 14px;
+  font-weight: 400;
+  margin-left: 5px;
+  color: #000;
+  opacity: .7;
+}
+
+
+
 .menu-main li a {
-  text-decoration: none; /*Bo gach chan the a*/
+  text-decoration: none;
+  /*Bo gach chan the a*/
   color: black;
 }
 
@@ -150,6 +192,7 @@
   height: 65px;
   align-items: center;
 }
+
 .customer-left ul li {
   list-style: none;
   width: 35px;
@@ -163,19 +206,20 @@
 }
 
 .customer-left ul li:hover {
-  background-color:  rgba(238, 238, 238, 0.4);
+  background-color: rgba(238, 238, 238, 0.4);
 }
 
 .customer-left ul .disabled {
   opacity: 0.3;
   cursor: not-allowed;
 }
+
 .customer-left ul .disabled:hover {
   background-color: #fff;
 }
 
 .customer-right {
-margin-left: 20px;
+  margin-left: 20px;
 }
 
 .customer-right ul {
@@ -183,14 +227,17 @@ margin-left: 20px;
   height: 65px;
   align-items: center;
 }
+
 .customer-right ul li {
   list-style: none;
   margin-left: 15px;
   position: relative;
 }
+
 .customer-right ul li i {
   font-size: 19px;
 }
+
 .customer-right ul li span {
   position: absolute;
   top: -12px;
@@ -206,12 +253,84 @@ margin-left: 20px;
   color: #fff;
 }
 
+
+/* Sub menu */
+.sub-menu-c1 {
+  position: absolute;
+  left: 0;
+  top: 100%;
+  width: 100%;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  display: none;
+}
+.menu-main li:hover .sub-menu-c1 {
+  display: block;
+}
+
+.sub-menu-c1 li {
+  padding: 10px 12px;
+  position: relative;
+  margin-right: 0;
+}
+.sub-menu-c1 li::before {
+  content: none;
+}
+.sub-menu-c1 li:hover > a {
+  color: blue;
+}
+
+.sub-menu-c2 {
+  position: absolute;
+  top: 0;
+  left: 100%;
+  width: 200px;
+  background-color: #fff;
+  display: none;
+}
+.sub-menu-c1 li:hover .sub-menu-c2 {
+  display: block;
+}
+
+
+/* Banner Main */
+.banner .owl-nav {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.banner .owl-nav button span {
+  color: black;
+  font-size: 50px;
+}
+
+.banner .owl-dots {
+  position: absolute;
+  top: 93%;
+  left: 50%;
+  transform: translate(-50%, 50%);
+}
+.banner .owl-dots button span {
+  width: 20px!important;
+  height: 5px!important;
+}
+.banner .owl-dots button.active span {
+  background-color: black!important;
+}
+
+
 /* Service Hot */
 .service-hot {
   width: 100%;
   background-color: pink;
   padding: 50px 0;
 }
+
 .content {
   width: 100%;
   height: 200px;
@@ -223,5 +342,12 @@ margin-left: 20px;
 .product-hot {
   width: 100%;
   background-color: aqua;
+  padding: 50px 0;
+}
+
+/* Footer */
+.footer {
+  width: 100%;
+  background-color: #000000;
   padding: 50px 0;
 }

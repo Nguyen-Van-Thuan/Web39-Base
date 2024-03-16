@@ -3,8 +3,8 @@ $(document).ready(function () {
   $('.owl-carousel').owlCarousel({
     loop: true, //Vong lap
     margin: 30, //Khoang cach giua item
-    nav: false, //Thanh dieu huong (Mui ten)
-    dots: false, //Dieu huong (Dau cham tron)
+    nav: true, //Thanh dieu huong (Mui ten)
+    dots: true, //Dieu huong (Dau cham tron)
     autoplay: true, //tu dong chuyen slider
     autoplayTimeout: 4000, //Thoi chuyen slider (ms)
 
